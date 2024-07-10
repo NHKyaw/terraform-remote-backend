@@ -12,7 +12,7 @@ variable "aws_profile" {
 variable "NHK-S3-Name" {
   description = "Your AWS S3 bucket name"
   type    = string
-  default = "NHKggwp_S3"
+  default = "nhk-s3-bucket"
 }
 
 variable "dynamodb-name" {
