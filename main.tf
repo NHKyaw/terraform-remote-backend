@@ -39,8 +39,9 @@ resource "aws_dynamodb_table" "NHK-dynamo-table" {
   name           = var.dynamodb-name
   billing_mode   = "PAY_PER_REQUEST"
   hash_key       = "LOCKID"
+
   attribute {
-    name = "UserId"
+    name = "LOCKID"
     type = "S"
   }
 }
